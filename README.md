@@ -2,6 +2,8 @@
 
 Vertica Access Management
 
+[Architecture pattern followed for the project](./ARCHITECTURE.md)
+
 ## References
 
 **Starting Vertica**
