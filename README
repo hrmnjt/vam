@@ -1,0 +1,55 @@
+                                    __
+                                   /  |
+ __     __   ______   _____  ____  $$ |
+/  \   /  | /      \ /     \/    \ $$ |
+$$  \ /$$/  $$$$$$  |$$$$$$ $$$$  |$$ |
+ $$  /$$/   /    $$ |$$ | $$ | $$ |$$/
+  $$ $$/   /$$$$$$$ |$$ | $$ | $$ | __
+   $$$/    $$    $$ |$$ | $$ | $$ |/  |
+    $/      $$$$$$$/ $$/  $$/  $$/ $$/
+
+
+Functional requirements
+-----------------------
+- We want to manage access for user in Vertica
+    - Create, update or delete users
+    - Create, update or delete roles
+    - Adding, updating or removing roles for users
+    - Adding, updating or revoking grants for roles
+- Adminstrative utilities
+    - Setting up authentication methods
+    - Setting up pools
+
+
+APIs exposed
+------------
+    Usage: vam <subcommand> [args]
+
+    Sub-commands:
+    init          Perform remote DB sync and prepare for other commands
+    validate      Check whether configurations is valid
+    plan          Show changes suggested by current configuration
+    apply         Create or update access control
+
+
+Code quality
+------------
+pylint: linting tool for codebase
+black: code formatter for codebase
+
+
+License
+-------
+Copyright 2020,2021 hrmnjt@hrmn.in
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
