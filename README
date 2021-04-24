@@ -32,12 +32,6 @@ APIs exposed
     apply         Create or update access control
 
 
-Code quality
-------------
-pylint: linting tool for codebase
-black: code formatter for codebase
-
-
 License
 -------
 Copyright 2020,2021 hrmnjt@hrmn.in
