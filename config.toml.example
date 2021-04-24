@@ -1,0 +1,7 @@
+
+[vertica]
+host = "hostname"
+port = portnumber
+user = "username"
+password = "secretpass"
+database = "databasename"

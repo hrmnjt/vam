@@ -1,0 +1,647 @@
+2021-04-24 17:54:36.201 [connection] 4472564896/21921:0x11163ce00 <INFO> Connecting as user "CA_Dev" to database "CA_Dev" on host "localhost" with port 5433
+2021-04-24 17:54:36.221 [connection] 4472564896/21921:0x11163ce00 <INFO> Establishing connection to host "::1" on port 5433
+2021-04-24 17:54:36.721 [connection] 4472564896/21921:0x11163ce00 <INFO> User CA_Dev successfully authenticated
+2021-04-24 17:54:36.722 [connection] 4472564896/21921:0x11163ce00 <WARNING> Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 17:54:36.898 [connection] 4472564896/21921:0x11163ce00 <INFO> Connection is ready
+2021-04-24 17:54:36.899 [cursor] 4472564896/21921:0x11163ce00 <INFO> Execute simple query: [select * from ETL_Admin.auditing_metadata order by 1]
+2021-04-24 17:54:37.135 [connection] 4472564896/21921:0x11163ce00 <INFO> Close the connection
+2021-04-24 17:59:20.239 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> Address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 17:59:20.239 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> Connection prepared statements is disabled
+2021-04-24 17:59:20.239 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> COPY LOCAL operation is enabled
+2021-04-24 17:59:20.239 [connection] 4462333088/22723:0x10a97ce00 <INFO> Connecting as user "CA_Dev" to database "CA_Dev" on host "localhost" with port 5433
+2021-04-24 17:59:20.250 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> Peek at address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 17:59:20.254 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> Peek at address list: [_AddressEntry(host='localhost', resolved=True, data=(<AddressFamily.AF_INET6: 30>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5433, 0, 0))), _AddressEntry(host='localhost', resolved=True, data=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5433)))]
+2021-04-24 17:59:20.254 [connection] 4462333088/22723:0x10a97ce00 <INFO> Establishing connection to host "::1" on port 5433
+2021-04-24 17:59:20.254 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> Connection load balance option is disabled
+2021-04-24 17:59:20.254 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> SSL option is disabled
+2021-04-24 17:59:20.255 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> => Startup
+2021-04-24 17:59:20.588 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= Authentication: type=66048
+2021-04-24 17:59:20.588 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> => Password
+2021-04-24 17:59:20.752 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= Authentication: type=0
+2021-04-24 17:59:20.752 [connection] 4462333088/22723:0x10a97ce00 <INFO> User CA_Dev successfully authenticated
+2021-04-24 17:59:20.753 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: client_locale = en_US@collation=binary
+2021-04-24 17:59:20.753 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: client_label = vertica-python-1.0.1-4430b642-a505-11eb-883a-acde48001122
+2021-04-24 17:59:20.753 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: server_version = v9.2.1-18
+2021-04-24 17:59:20.753 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: long_string_types = on
+2021-04-24 17:59:20.753 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: protocol_version = 196616
+2021-04-24 17:59:20.753 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: standard_conforming_strings = on
+2021-04-24 17:59:20.754 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= BackendKeyData: pid = 6303771, key = 118444047
+2021-04-24 17:59:20.754 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= NoticeResponse: Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 17:59:20.754 [connection] 4462333088/22723:0x10a97ce00 <WARNING> Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 17:59:20.928 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ReadyForQuery: status = no_transaction
+2021-04-24 17:59:20.928 [connection] 4462333088/22723:0x10a97ce00 <INFO> Connection is ready
+2021-04-24 17:59:20.929 [cursor] 4462333088/22723:0x10a97ce00 <INFO> Execute simple query: [select * from ETL_Admin.auditing_metadata order by 1]
+2021-04-24 17:59:20.929 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> => Query
+2021-04-24 17:59:21.111 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= RowDescription: [{'name': 'table_name', 'table_oid': 67553995722726478, 'schema_name': 'ETL_Admin', 'table_name': 'auditing_metadata', 'attribute_number': 1, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 1004, 'format_code': 0}, {'name': 'date_column', 'table_oid': 67553995722726478, 'schema_name': 'ETL_Admin', 'table_name': 'auditing_metadata', 'attribute_number': 2, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 1004, 'format_code': 0}, {'name': 'days_late', 'table_oid': 67553995722726478, 'schema_name': 'ETL_Admin', 'table_name': 'auditing_metadata', 'attribute_number': 3, 'data_type_oid': 6, 'data_type_size': 8, 'data_type_name': 'Integer', 'null_ok': True, 'is_identity': False, 'type_modifier': -1, 'format_code': 0}, {'name': 'min_rows', 'table_oid': 67553995722726478, 'schema_name': 'ETL_Admin', 'table_name': 'auditing_metadata', 'attribute_number': 4, 'data_type_oid': 6, 'data_type_size': 8, 'data_type_name': 'Integer', 'null_ok': True, 'is_identity': False, 'type_modifier': -1, 'format_code': 0}, {'name': 'check_missing', 'table_oid': 67553995722726478, 'schema_name': 'ETL_Admin', 'table_name': 'auditing_metadata', 'attribute_number': 5, 'data_type_oid': 5, 'data_type_size': 1, 'data_type_name': 'Boolean', 'null_ok': True, 'is_identity': False, 'type_modifier': -1, 'format_code': 0}, {'name': 'notes', 'table_oid': 67553995722726478, 'schema_name': 'ETL_Admin', 'table_name': 'auditing_metadata', 'attribute_number': 6, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 1004, 'format_code': 0}]
+2021-04-24 17:59:21.112 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: standard_conforming_strings = on
+2021-04-24 17:59:21.112 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: MARS = off
+2021-04-24 17:59:21.112 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= ParameterStatus: client_locale = en_US@collation=binary
+2021-04-24 17:59:21.113 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= DataRow
+2021-04-24 17:59:21.113 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= DataRow
+2021-04-24 17:59:21.113 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= DataRow
+2021-04-24 17:59:21.113 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> <= CommandComplete: command_tag = ""
+2021-04-24 17:59:21.113 [connection] 4462333088/22723:0x10a97ce00 <INFO> Close the connection
+2021-04-24 17:59:21.113 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> => Terminate
+2021-04-24 17:59:21.114 [connection] 4462333088/22723:0x10a97ce00 <DEBUG> Address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 18:13:29.803 [connection] 4410457248/23732:0x1147ade00 <DEBUG> Address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 18:13:29.803 [connection] 4410457248/23732:0x1147ade00 <DEBUG> Connection prepared statements is disabled
+2021-04-24 18:13:29.803 [connection] 4410457248/23732:0x1147ade00 <DEBUG> COPY LOCAL operation is enabled
+2021-04-24 18:13:29.803 [connection] 4410457248/23732:0x1147ade00 <INFO> Connecting as user "CA_Dev" to database "CA_Dev" on host "localhost" with port 5433
+2021-04-24 18:13:29.817 [connection] 4410457248/23732:0x1147ade00 <DEBUG> Peek at address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 18:13:29.821 [connection] 4410457248/23732:0x1147ade00 <DEBUG> Peek at address list: [_AddressEntry(host='localhost', resolved=True, data=(<AddressFamily.AF_INET6: 30>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5433, 0, 0))), _AddressEntry(host='localhost', resolved=True, data=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5433)))]
+2021-04-24 18:13:29.821 [connection] 4410457248/23732:0x1147ade00 <INFO> Establishing connection to host "::1" on port 5433
+2021-04-24 18:13:29.821 [connection] 4410457248/23732:0x1147ade00 <DEBUG> Connection load balance option is disabled
+2021-04-24 18:13:29.821 [connection] 4410457248/23732:0x1147ade00 <DEBUG> SSL option is disabled
+2021-04-24 18:13:29.821 [connection] 4410457248/23732:0x1147ade00 <DEBUG> => Startup
+2021-04-24 18:13:30.340 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= Authentication: type=66048
+2021-04-24 18:13:30.341 [connection] 4410457248/23732:0x1147ade00 <DEBUG> => Password
+2021-04-24 18:13:30.679 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= Authentication: type=0
+2021-04-24 18:13:30.679 [connection] 4410457248/23732:0x1147ade00 <INFO> User CA_Dev successfully authenticated
+2021-04-24 18:13:30.679 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= ParameterStatus: client_locale = en_US@collation=binary
+2021-04-24 18:13:30.680 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= ParameterStatus: client_label = vertica-python-1.0.1-3e91d764-a507-11eb-ba8e-acde48001122
+2021-04-24 18:13:30.680 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= ParameterStatus: server_version = v9.2.1-18
+2021-04-24 18:13:30.680 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= ParameterStatus: long_string_types = on
+2021-04-24 18:13:30.680 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= ParameterStatus: protocol_version = 196616
+2021-04-24 18:13:30.680 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= ParameterStatus: standard_conforming_strings = on
+2021-04-24 18:13:30.680 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= BackendKeyData: pid = 6306221, key = 1411579919
+2021-04-24 18:13:30.681 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= NoticeResponse: Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 18:13:30.681 [connection] 4410457248/23732:0x1147ade00 <WARNING> Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 18:13:30.766 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= ReadyForQuery: status = no_transaction
+2021-04-24 18:13:30.766 [connection] 4410457248/23732:0x1147ade00 <INFO> Connection is ready
+2021-04-24 18:13:30.766 [cursor] 4410457248/23732:0x1147ade00 <INFO> Execute simple query: [select user_name
+                ,is_locked
+                ,grace_period
+                ,idle_session_timeout
+                ,max_connections
+                ,memory_cap_kb
+                ,profile_name
+                ,resource_pool
+                ,run_time_cap
+                ,search_path
+                ,temp_space_cap_kb
+            from users;
+        ]
+2021-04-24 18:13:30.767 [connection] 4410457248/23732:0x1147ade00 <DEBUG> => Query
+2021-04-24 18:13:31.323 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= RowDescription: [{'name': 'user_name', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 2, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'is_locked', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 5, 'data_type_oid': 5, 'data_type_size': 1, 'data_type_name': 'Boolean', 'null_ok': True, 'is_identity': False, 'type_modifier': -1, 'format_code': 0}, {'name': 'grace_period', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 14, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 67, 'format_code': 0}, {'name': 'idle_session_timeout', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 13, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 67, 'format_code': 0}, {'name': 'max_connections', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 11, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 24, 'format_code': 0}, {'name': 'memory_cap_kb', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 8, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 24, 'format_code': 0}, {'name': 'profile_name', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 4, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'resource_pool', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 7, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'run_time_cap', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 10, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 67, 'format_code': 0}, {'name': 'search_path', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 17, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'temp_space_cap_kb', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 9, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 24, 'format_code': 0}]
+2021-04-24 18:13:31.324 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.324 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.324 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.324 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.324 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.325 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.326 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.327 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.328 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.328 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.456 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.456 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.456 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.456 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.457 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.457 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.457 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.457 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.457 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.458 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.458 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.458 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.458 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.458 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.458 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.458 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.459 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.459 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.459 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.459 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.459 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.459 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.459 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.460 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.461 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.462 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.463 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.464 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.465 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.465 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.483 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.484 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.484 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.484 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.484 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.484 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.484 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.484 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.485 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.486 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.512 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.513 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.591 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.592 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.592 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.592 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.592 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.592 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.592 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.593 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.594 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.595 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.596 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.597 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.597 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.619 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.619 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.619 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.620 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.620 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.620 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= DataRow
+2021-04-24 18:13:31.620 [connection] 4410457248/23732:0x1147ade00 <DEBUG> <= CommandComplete: command_tag = ""
+2021-04-24 18:13:31.620 [connection] 4410457248/23732:0x1147ade00 <INFO> Close the connection
+2021-04-24 18:13:31.620 [connection] 4410457248/23732:0x1147ade00 <DEBUG> => Terminate
+2021-04-24 18:13:31.620 [connection] 4410457248/23732:0x1147ade00 <DEBUG> Address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 18:13:45.782 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> Address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 18:13:45.782 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> Connection prepared statements is disabled
+2021-04-24 18:13:45.782 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> COPY LOCAL operation is enabled
+2021-04-24 18:13:45.782 [connection] 4476419232/23752:0x116c2ee00 <INFO> Connecting as user "CA_Dev" to database "CA_Dev" on host "localhost" with port 5433
+2021-04-24 18:13:45.791 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> Peek at address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 18:13:45.796 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> Peek at address list: [_AddressEntry(host='localhost', resolved=True, data=(<AddressFamily.AF_INET6: 30>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 5433, 0, 0))), _AddressEntry(host='localhost', resolved=True, data=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 5433)))]
+2021-04-24 18:13:45.796 [connection] 4476419232/23752:0x116c2ee00 <INFO> Establishing connection to host "::1" on port 5433
+2021-04-24 18:13:45.796 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> Connection load balance option is disabled
+2021-04-24 18:13:45.796 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> SSL option is disabled
+2021-04-24 18:13:45.796 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> => Startup
+2021-04-24 18:13:46.134 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= Authentication: type=66048
+2021-04-24 18:13:46.135 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> => Password
+2021-04-24 18:13:46.301 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= Authentication: type=0
+2021-04-24 18:13:46.302 [connection] 4476419232/23752:0x116c2ee00 <INFO> User CA_Dev successfully authenticated
+2021-04-24 18:13:46.302 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= ParameterStatus: client_locale = en_US@collation=binary
+2021-04-24 18:13:46.302 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= ParameterStatus: client_label = vertica-python-1.0.1-4818086c-a507-11eb-a1f5-acde48001122
+2021-04-24 18:13:46.303 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= ParameterStatus: server_version = v9.2.1-18
+2021-04-24 18:13:46.303 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= ParameterStatus: long_string_types = on
+2021-04-24 18:13:46.303 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= ParameterStatus: protocol_version = 196616
+2021-04-24 18:13:46.303 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= ParameterStatus: standard_conforming_strings = on
+2021-04-24 18:13:46.303 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= BackendKeyData: pid = 6306255, key = 1245626383
+2021-04-24 18:13:46.303 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= NoticeResponse: Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 18:13:46.304 [connection] 4476419232/23752:0x116c2ee00 <WARNING> Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 18:13:46.342 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= ReadyForQuery: status = no_transaction
+2021-04-24 18:13:46.342 [connection] 4476419232/23752:0x116c2ee00 <INFO> Connection is ready
+2021-04-24 18:13:46.342 [cursor] 4476419232/23752:0x116c2ee00 <INFO> Execute simple query: [select user_name
+                ,is_locked
+                ,grace_period
+                ,idle_session_timeout
+                ,max_connections
+                ,memory_cap_kb
+                ,profile_name
+                ,resource_pool
+                ,run_time_cap
+                ,search_path
+                ,temp_space_cap_kb
+            from users;
+        ]
+2021-04-24 18:13:46.342 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> => Query
+2021-04-24 18:13:46.537 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= RowDescription: [{'name': 'user_name', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 2, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'is_locked', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 5, 'data_type_oid': 5, 'data_type_size': 1, 'data_type_name': 'Boolean', 'null_ok': True, 'is_identity': False, 'type_modifier': -1, 'format_code': 0}, {'name': 'grace_period', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 14, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 67, 'format_code': 0}, {'name': 'idle_session_timeout', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 13, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 67, 'format_code': 0}, {'name': 'max_connections', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 11, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 24, 'format_code': 0}, {'name': 'memory_cap_kb', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 8, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 24, 'format_code': 0}, {'name': 'profile_name', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 4, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'resource_pool', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 7, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'run_time_cap', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 10, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 67, 'format_code': 0}, {'name': 'search_path', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 17, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 132, 'format_code': 0}, {'name': 'temp_space_cap_kb', 'table_oid': 10010, 'schema_name': 'v_catalog', 'table_name': 'users', 'attribute_number': 9, 'data_type_oid': 9, 'data_type_size': -1, 'data_type_name': 'Varchar', 'null_ok': True, 'is_identity': False, 'type_modifier': 24, 'format_code': 0}]
+2021-04-24 18:13:46.538 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.539 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.539 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.539 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.539 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.539 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.539 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.540 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.540 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.540 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.540 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.540 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.540 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.540 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.541 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.542 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.543 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.544 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.674 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.674 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.674 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.675 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.675 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.675 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.675 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.676 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.677 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.678 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.679 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.680 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.681 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.682 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.683 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.683 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.683 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.683 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.683 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.699 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.699 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.699 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.700 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.701 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.701 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.701 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.701 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.701 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.731 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.731 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.731 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.731 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.731 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.731 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.731 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.732 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.733 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.733 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.733 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.733 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.811 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.811 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.811 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.811 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.811 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.812 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.813 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.814 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.815 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.815 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.834 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.834 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.834 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.834 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.834 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.835 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= DataRow
+2021-04-24 18:13:46.835 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> <= CommandComplete: command_tag = ""
+2021-04-24 18:13:46.835 [connection] 4476419232/23752:0x116c2ee00 <INFO> Close the connection
+2021-04-24 18:13:46.835 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> => Terminate
+2021-04-24 18:13:46.835 [connection] 4476419232/23752:0x116c2ee00 <DEBUG> Address list: [_AddressEntry(host='localhost', resolved=False, data=5433)]
+2021-04-24 18:14:26.650 [connection] 4311354528/23797:0x10fbe0e00 <INFO> Connecting as user "CA_Dev" to database "CA_Dev" on host "localhost" with port 5433
+2021-04-24 18:14:26.671 [connection] 4311354528/23797:0x10fbe0e00 <INFO> Establishing connection to host "::1" on port 5433
+2021-04-24 18:14:27.169 [connection] 4311354528/23797:0x10fbe0e00 <INFO> User CA_Dev successfully authenticated
+2021-04-24 18:14:27.170 [connection] 4311354528/23797:0x10fbe0e00 <WARNING> Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
+2021-04-24 18:14:27.347 [connection] 4311354528/23797:0x10fbe0e00 <INFO> Connection is ready
+2021-04-24 18:14:27.347 [cursor] 4311354528/23797:0x10fbe0e00 <INFO> Execute simple query: [select user_name
+                ,is_locked
+                ,grace_period
+                ,idle_session_timeout
+                ,max_connections
+                ,memory_cap_kb
+                ,profile_name
+                ,resource_pool
+                ,run_time_cap
+                ,search_path
+                ,temp_space_cap_kb
+            from users;
+        ]
+2021-04-24 18:14:27.836 [connection] 4311354528/23797:0x10fbe0e00 <INFO> Close the connection
+2021-04-24 18:15:42.467 [connection] 4512926880/24402:0x1197d4e00 <WARNING> Severity: NOTICE, Message: 
+***** NOTICE OF LICENSE NON-COMPLIANCE *****
+Continued use of this database is in violation of the current license agreement.
+Maximum licensed raw data size: 40.00TB
+Current raw data size: 50.79TB
+License utilization: 127%
+IMMEDIATE ACTION IS REQUIRED, PLEASE CONTACT VERTICA, Sqlstate: 00000, Routine: issueNoticeIfSeverelyLacksCompliance, File: /data/qb_workspaces/jenkins2/ReleaseBuilds/Grader/REL-9_2_1-x_grader/build/vertica/Catalog/Database.cpp, Line: 288, Error Code: 2001
