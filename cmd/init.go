@@ -13,10 +13,26 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package main
+package cmd
 
-import "github.com/hrmnjt/vam/cmd"
+import (
+	"fmt"
 
-func main() {
-	cmd.Execute()
+	"github.com/spf13/cobra"
+)
+
+// initCmd represents the init command
+var initCmd = &cobra.Command{
+	Use:   "init",
+	Short: "initializing vam!",
+	Long: `init bootstraps vam for execution. It asks the
+users to specify connection parameters and brings
+the state of the current access grants.`,
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("init called")
+	},
+}
+
+func init() {
+	rootCmd.AddCommand(initCmd)
 }

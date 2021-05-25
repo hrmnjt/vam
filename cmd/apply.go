@@ -13,10 +13,26 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
-package main
+package cmd
 
-import "github.com/hrmnjt/vam/cmd"
+import (
+	"fmt"
 
-func main() {
-	cmd.Execute()
+	"github.com/spf13/cobra"
+)
+
+// applyCmd represents the apply command
+var applyCmd = &cobra.Command{
+	Use:   "apply",
+	Short: "apply proposed changed for vam!",
+	Long: `apply makes the changes to plan compares the
+changes that you intend to do on users, roles and
+accesses and suggest the changes can be applied.`,
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("apply called")
+	},
+}
+
+func init() {
+	rootCmd.AddCommand(applyCmd)
 }
