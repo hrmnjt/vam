@@ -69,3 +69,11 @@ go run cmd/vam.go
 # limitations under the License.
 
 ```
+
+## Project structure
+
+`vam!` follows standard Go project structure as suggested in 
+[golang-standards/project-layout]()
+
+<!-- References -->
+[golang-standards/project-layout]: https://github.com/golang-standards/project-layout
