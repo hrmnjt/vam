@@ -10,6 +10,9 @@ $$  \ /$$/  $$$$$$  |$$$$$$ $$$$  |$$ |
     $/      $$$$$$$/ $$/  $$/  $$/ $$/
 ```
 
+`vam!` expands to Vertica Access Management. This is a work in progress project 
+and is very crude and might have side effects which are not handled as of now. 
+**Use with caution!**
 
 ## License
 
