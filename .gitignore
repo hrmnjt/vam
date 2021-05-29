@@ -1,0 +1,4 @@
+# .gitignore
+
+### sqlite database for configurations
+vam.db

@@ -73,3 +73,36 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+## Design
+
+### Initialize
+
+**Step 1 - create roles based on existing roles**
+
+- `role_name`
+- `role_description`
+- `role_tags`
+- `role_id`
+- `created_ts`
+- `updated_ts`
+
+**Step 2 - User creation**
+
+- `user_name`
+- `user_is_locked`
+- `user_resource_pool`
+- `user_memory_cap`
+- `user_temp_space_cap`
+- `user_runtime_cap`
+- `user_max_connection`
+- `user_idle_session_timeout`
+- `user_search_path`
+- `user_description`
+- `user_tags`
+- `user_id`
+- `created_ts`
+- `updated_ts`
+
+
+**Step 3 - Grant access to roles**
