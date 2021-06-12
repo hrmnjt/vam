@@ -14,48 +14,6 @@ $$  \ /$$/  $$$$$$  |$$$$$$ $$$$  |$$ |
 and is very crude and might have side effects which are not handled as of now. 
 **Use with caution!**
 
-
-## Usage
-
-_At this moment the CLI functionality can be tested and the CLi actually 
-doesn't issue commands to modules. I intend to make triggers work post module
-functionality is complete_
-
-```bash
-go run vam.go
-# vam! is an opiniated vertica access management
-
-# vam is designed to compliment the user and role
-# access that have been setup on your installation
-# of Vertica database. It is majorly a command line
-# interface that exposes simple APIs to interact
-# with Vertica database
-
-# Usage:
-#   vam [command]
-
-# Available Commands:
-#   apply       apply proposed changed for vam!
-#   init        initializing vam!
-#   plan        planning changed for vam!
-
-# Flags:
-#       --config string   config file (default is $HOME/.vam.yaml)
-#   -h, --help            help for vam
-#   -v, --version         version for vam
-
-# Use "vam [command] --help" for more information about a command.
-```
-
-## Project structure
-
-`vam!` follows standard Go project structure as suggested in 
-[golang-standards/project-layout]()
-
-<!-- References -->
-[golang-standards/project-layout]: https://github.com/golang-standards/project-layout
-
-
 ## License
 
 ```
@@ -104,5 +62,4 @@ limitations under the License.
 - `created_ts`
 - `updated_ts`
 
-
-**Step 3 - Grant access to roles**
+  
