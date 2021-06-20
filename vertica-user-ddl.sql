@@ -80,7 +80,7 @@ ALL (
 )
 UNION
 ALL (
-	-- grant access toss
+	-- grant access to
 		-- resource pool
 		-- storage location
 		-- client authentication

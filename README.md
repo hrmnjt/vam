@@ -32,9 +32,100 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-## Design
+## Technical Specifications
 
-### Initialize
+<!-- TODO: add overview for `vam` -->
+### Overview
+
+TBD
+
+<!-- TODO: add glossary for `vam` -->
+### Glossary and terminology
+
+TBD
+
+### Goals for project
+
+High level outcomes of the project is to provide access management in 
+declarative approach. Below would be good goals to achieve as part of the 
+project implementation.
+
+- **Bootstrap**: get current access related configurations from existing 
+vertica cluster
+
+- **Declare**: declare a change in access configuration which is evaluated 
+against the current setup and results are indicated
+
+- **Apply**: apply a change in access configuration as per declared changes
+
+> Initial project design is highly influenced by 
+[Terraform](https://www.terraform.io/) given the success of IaC paradigm 
+with declarative code. `vam` is config driven approach based on similar 
+principles.
+
+### Non-goals for project
+
+- `vam` adds onto access functions provided by Vertica default instead of 
+branching away. The idealogy is to remain a logical wrapper instead of 
+alternate access control methods
+
+### Future goals
+
+- RESTful API
+- UI to declare and apply changes
+
+## Solution
+
+<!-- TODO: current vertica access control design -->
+### Existing Vertica access control
+
+TBD
+
+### `vam` design
+
+#### External conncetions - existing Vertica DB using native client libraries
+
+
+#### Logic
+
+<!-- TODO: Improve BOOTSTRAP logical flow -->
+##### Bootstrap
+
+**Step 1 - connect to an existing Vertica DB**
+
+**Step 2 - gather essential details**
+
+- Get roles
+- Get users
+- Get resource pools
+- Get storage locations
+- Get client authentication
+- Get databases
+- Get libraries
+- Get procedures
+- Get tables
+- Get views
+
+**Step 3 - format bootstrap information as logical data structures as part of 
+configuration**
+
+<!-- TODO: add DECLARE logical flow -->
+##### Declare
+
+TBD
+
+<!-- TODO: add APPLY logical flow -->
+##### Apply
+
+TBD
+
+<!-- TODO: add data model details -->
+#### Data model
+
+TBD
+
+<!-- TODO: curate below block as per BOOTSTRAP step -->
+##### bootstrap
 
 **Step 1 - create roles based on existing roles**
 
@@ -62,4 +153,18 @@ limitations under the License.
 - `created_ts`
 - `updated_ts`
 
-  
+<!-- TODO: add interfaces planned for `vam` -->
+#### Interface
+
+TBD
+
+<!-- TODO: add approach for scaling `vam` -->
+#### Scale
+
+TBD
+
+<!-- TODO: add approach to recover in case of failure -->
+#### Recovery (in case of failure)
+
+TBD
+
