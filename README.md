@@ -23,7 +23,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-  http://www.apache.org/licenses/LICENSE-2.0
+  	http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -31,6 +31,55 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+## User stories
+
+**0.1.0 - initial project structure**
+
+- [x] initial technical specifications
+- [ ] mock cli
+
+**0.1.1 - bootstrap**
+
+- [ ] Connect to Vertica using client libraries
+- [ ] Fetch current existing data
+    - [ ] Users
+    - [ ] Databases
+    - [ ] Client authentication methods
+    - [ ] Roles
+    - [ ] Tables
+    - [ ] Views
+    - [ ] Procedures
+    - [ ] Libraries
+    - [ ] Storage locations
+    - [ ] Resource pools
+- [ ] Current grants data structure outline
+- [ ] Create list CLI option to show current grants
+- [ ] Create sync CLI option to sync new upstream changes
+- [ ] Bring incremental data into current config based on changes
+- [ ] 
+
+**uncategorized**
+
+- [ ] Configuration storage data model
+- [ ] Dataflow diagram/model
+- [ ] Backup current grants in case of issues
+- [ ] Create add CLI option to add new user or role
+- [ ] Create remove CLI option to remove existing user or role
+- [ ] Create grant CLI option to grant access to user or role
+- [ ] Create revoke CLI option to revoke access to user or role
+- [ ] Create diff CLI option to understand the difference in configuration as 
+per currently declared changes
+- [ ] Create apply CLI option to persist changes declared
+- [ ] Sync and bootstrap the config automatically after making changes upstream
+- [ ] Show improvement - direct user based access
+- [ ] Show improvement - poorly defined roles
+- [ ] Show improvement - duplicate roles
+- [ ] Create an approach to re-apply current grants everyday to override 
+upstream changes or show as an improvement
+- [ ] Create an approach to track changes which are verified by governance 
+team and which are made manually upstream
+- [ ] 
 
 ## Technical Specifications
 
@@ -81,11 +130,10 @@ command line terminal which has access to the database directly.
 with declarative code. `vam` is config driven approach based on similar 
 principles.
 
-### Non-goals for project
+### Non-goals for project (or boundaries for `vam`)
 
 - `vam` adds onto access functions provided by Vertica instead of branching 
 away. The idealogy is to remain a logical wrapper instead of alternate access 
 control approach.
 
-- `vam` is not going to have RESTful APIs or an UI to change the configuration;
-at least for now.
+- `vam` is purely a CLI tool; at least for now, till it matures for its users.
