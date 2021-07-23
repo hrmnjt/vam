@@ -34,29 +34,47 @@ limitations under the License.
 
 ## Technical Specifications
 
-<!-- TODO: add overview for `vam` -->
 ### Overview
 
-TBD
+`vam` expands to Vertica Access Management.
 
-<!-- TODO: add glossary for `vam` -->
-### Glossary and terminology
+Vertica is an analytical database which is built with MPP architecture to power 
+demanding workloads for reporting and analytics.
 
-TBD
+Access Mananagment is a tricky affair when it comes to analytics. Many 
+organizations don't worry too much about access control and managing access to 
+data. But when PII information gets mixed with financial and customer behavior 
+data it becomes imperative to worry about controlling access to data.
+
+`vam` is an opiniated access management tool built on top of Vertica's 
+inbuilt SQL based GRANT dialects in order to handle access management for a 
+medium to large scale analytics organization.
 
 ### Goals for project
 
-High level outcomes of the project is to provide access management in 
-declarative approach. Below would be good goals to achieve as part of the 
-project implementation.
+Most important goal for `vam` is to fill in gaps for excel sheets and notepad 
+script that are created to manage access to Vertica database using the inbuilt
+SQL based GRANT directives.
 
-- **Bootstrap**: get current access related configurations from existing 
-vertica cluster
+An opiniated approach to manage access rights and control lists is to define 
+them in a declarative approach. Most important work to be done by `vam` would 
+be to `declare` a change and `apply` changes to Vertica
 
 - **Declare**: declare a change in access configuration which is evaluated 
 against the current setup and results are indicated
 
 - **Apply**: apply a change in access configuration as per declared changes
+
+Additionally, it is hard to `declare` changes to access roles if you don't know 
+which accesses are currently granted to each users or role. Hence, additional 
+role would be to `bootstrap` the current access list into a fixed format which 
+could serve as a reference.
+
+- **Bootstrap**: get current access related configurations from existing 
+vertica cluster
+
+All of this is supposed to be a CLI based operation. It would work from any 
+command line terminal which has access to the database directly.
 
 > Initial project design is highly influenced by 
 [Terraform](https://www.terraform.io/) given the success of IaC paradigm 
@@ -65,106 +83,9 @@ principles.
 
 ### Non-goals for project
 
-- `vam` adds onto access functions provided by Vertica default instead of 
-branching away. The idealogy is to remain a logical wrapper instead of 
-alternate access control methods
+- `vam` adds onto access functions provided by Vertica instead of branching 
+away. The idealogy is to remain a logical wrapper instead of alternate access 
+control approach.
 
-### Future goals
-
-- RESTful API
-- UI to declare and apply changes
-
-## Solution
-
-<!-- TODO: current vertica access control design -->
-### Existing Vertica access control
-
-TBD
-
-### `vam` design
-
-#### External conncetions - existing Vertica DB using native client libraries
-
-
-#### Logic
-
-<!-- TODO: Improve BOOTSTRAP logical flow -->
-##### Bootstrap
-
-**Step 1 - connect to an existing Vertica DB**
-
-**Step 2 - gather essential details**
-
-- Get roles
-- Get users
-- Get resource pools
-- Get storage locations
-- Get client authentication
-- Get databases
-- Get libraries
-- Get procedures
-- Get tables
-- Get views
-
-**Step 3 - format bootstrap information as logical data structures as part of 
-configuration**
-
-<!-- TODO: add DECLARE logical flow -->
-##### Declare
-
-TBD
-
-<!-- TODO: add APPLY logical flow -->
-##### Apply
-
-TBD
-
-<!-- TODO: add data model details -->
-#### Data model
-
-TBD
-
-<!-- TODO: curate below block as per BOOTSTRAP step -->
-##### bootstrap
-
-**Step 1 - create roles based on existing roles**
-
-- `role_name`
-- `role_description`
-- `role_tags`
-- `role_id`
-- `created_ts`
-- `updated_ts`
-
-**Step 2 - User creation**
-
-- `user_name`
-- `user_is_locked`
-- `user_resource_pool`
-- `user_memory_cap`
-- `user_temp_space_cap`
-- `user_runtime_cap`
-- `user_max_connection`
-- `user_idle_session_timeout`
-- `user_search_path`
-- `user_description`
-- `user_tags`
-- `user_id`
-- `created_ts`
-- `updated_ts`
-
-<!-- TODO: add interfaces planned for `vam` -->
-#### Interface
-
-TBD
-
-<!-- TODO: add approach for scaling `vam` -->
-#### Scale
-
-TBD
-
-<!-- TODO: add approach to recover in case of failure -->
-#### Recovery (in case of failure)
-
-TBD
-
+- `vam` is not going to have RESTful APIs or an UI to change the configuration;
+at least for now.
