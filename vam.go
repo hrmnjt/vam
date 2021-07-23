@@ -19,9 +19,11 @@ import (
 	"fmt"
 
 	"github.com/hrmnjt/vam/cmd"
+	"github.com/hrmnjt/vam/internal"
 )
 
 func main() {
 	fmt.Println("Printing command prompts")
 	cmd.Execute()
+	internal.Execute()
 }

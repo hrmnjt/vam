@@ -10,6 +10,9 @@ $$  \ /$$/  $$$$$$  |$$$$$$ $$$$  |$$ |
     $/      $$$$$$$/ $$/  $$/  $$/ $$/
 ```
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/hrmnjt/vam)](https://goreportcard.com/report/github.com/hrmnjt/vam)
+[![Go Reference](https://pkg.go.dev/badge/github.com/hrmnjt/vam.svg)](https://pkg.go.dev/github.com/hrmnjt/vam)
+
 `vam!` expands to Vertica Access Management. This is a work in progress project 
 and is very crude and might have side effects which are not handled as of now. 
 **Use with caution!**
@@ -61,6 +64,8 @@ limitations under the License.
 
 **uncategorized**
 
+- [ ] Create logging for everything that happens
+- [ ] Improve command line prompt info
 - [ ] Configuration storage data model
 - [ ] Dataflow diagram/model
 - [ ] Backup current grants in case of issues
